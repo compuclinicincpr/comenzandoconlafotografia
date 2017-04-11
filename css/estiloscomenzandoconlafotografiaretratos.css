@@ -1,0 +1,263 @@
+
+
+body{
+  font-family: 'Dancing Script', cursive;
+  text-decoration-style:none;
+}
+.contenido{
+  margin: 0;
+  background-color: #02010a;
+}
+header{
+  margin-left: 20%;
+  margin-right: 20%;
+
+  border-radius: 10px 10px 0px 0px;
+  background-color: #5b7989;
+  animation-name: example;
+  animation-duration:3s;
+
+}
+  @keyframes example {
+    0%   {margin-top:150%;}
+    60%  {margin-top:-5%;}
+    100%  {margin-top:0%;}
+
+}
+
+header h2{
+  width: 50%;
+  padding-left: 5%;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+  display: inline-block;
+
+}
+nav{
+  width: 50%;
+  display: inline;
+
+}
+ul{
+  float: right;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  height: 100%;
+
+}
+li{
+  display: inline-block;
+  margin: .2em .2em;
+  padding:.75em .75em;
+
+}
+header a{
+  text-decoration: none;
+  color:white;
+}
+header a:visited{
+  text-decoration: underline;
+}
+.contenedor{
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 0;
+  background-color: #82c3a6;
+}
+
+#universe1{
+  width: 80%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  box-shadow: 2px 2px #02010a;
+}
+.main{
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 0;
+  border:1px;
+  background-color: #d5c75f;
+  display:flex;
+  flex-wrap: wrap;
+
+}
+.main a:visited{
+  color: black;
+}
+.column1{
+  display: flex;
+}
+
+.retratos1{
+  filter: blur(10px);
+  flex: 4;
+  flex: -webkit-1;
+  order:1;
+}
+
+.retratos2{
+  filter:grayscale(100%);
+  flex: 4;
+  flex: -webkit-1;
+order: 2;
+}
+.retratos3{
+  filter:sepia(90%);
+  flex: 4;
+  flex: -webkit-1;
+  order:3;
+}
+
+.column2{
+  display: flex;
+}
+.retratos4{
+  filter:grayscale(100%);
+  flex: 4;
+  flex: -webkit-1;
+  order:4;
+ }
+.retratos5{
+  flex: 4;
+  flex: -webkit-1;
+  order:5;
+}
+.retratos6{
+  filter:grayscale(100%);
+  flex: 4;
+  flex: -webkit-1;
+  order:6;
+}
+
+#sol1{
+  width: 80%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  box-shadow: 2px 2px #02010a;
+}
+#retratocosmico{
+  width: 80%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 10%;
+  box-shadow: 2px 2px #02010a;
+}
+
+#sol1:hover{
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+}
+
+.piepagina{
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #C6d5c5;
+  color:black;
+  display: flex;
+  display:-webkit-flex;
+}
+
+#pie1{
+  flex:1;
+  flex: -webkit-1;
+  text-align: center;
+  color: inherit;
+}
+#email{
+  text-decoration: none;
+  color: black;
+}
+#pie2{
+  flex:1;
+  flex: -webkit-1;
+  text-align: center;
+}
+#pie3{
+  flex:1;
+  flex: -webkit-1;
+  text-align: center;
+}
+#pie4{
+  flex:1;
+  flex: -webkit-1;
+  text-align: center;
+}
+.redes{
+  display:inline;
+
+}
+#facebooklogo{
+  width: 20%;
+  height: 20%;
+}
+#twitterlogo{
+  width: 20%;
+  height: 20%;
+}
+#instagramlogo{
+  width: 20%;
+  height: 20%;
+}
+
+@media only screen and (max-width:900px) {
+  header h2{
+    width: 100%;
+    text-align: center;
+
+  }
+  nav{
+    width: 100%;
+    margin-left: 15%;
+    text-align: center;
+  }
+  ul{
+  float:none;
+  }
+
+  .main{
+    display:block;
+
+  }
+  .column1{
+    display: flex;
+    flex-flow: column;
+  }
+  .column2{
+    display: block;
+  }
+  .retratos{
+    width: 100%;
+
+  }
+
+  .paisajes{
+    width: 100%;
+
+  }
+
+  .piepagina{
+
+    display: block;
+
+  }
+
+  #pie1{
+    width: 100%;
+  }
+  #pie2{
+    width: 100%;
+  }
+  #pie3{
+    width: 100%;
+  }
+  #pie4{
+    width: 100%;
+  }
+}
